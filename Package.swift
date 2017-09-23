@@ -1,3 +1,4 @@
+// swift-tools-version:4.0
 import Foundation
 import PackageDescription
 
@@ -31,6 +32,7 @@ let package = Package(
         }
         return deps
     }(),
+    swiftLanguageVersions: [4],
     exclude: [
         "Source/Scripts",
         "Source/carthage/swift-is-crashy.c",
